@@ -1,3 +1,6 @@
+
+
+//REACT and Oauth Imports 
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router-dom'
 import './App.css';
@@ -6,9 +9,20 @@ import LoginPage from '../LoginPage/LoginPage';
 import SignupPage from '../SignupPage/SignupPage';
 import userService from '../../services/userService';
 
+
+//API IMPORTS 
+import Cards from '../../components/Cards/Cards';
+import Chart from '../../components/Chart/Chart';
+import CountryPicker from '../../components/CountryPicker/CountryPicker' ;
+import {fetchData } from '../../api';
+
+
+
+
 class App extends Component {
   state = {
-    user: userService.getUser()
+    user: userService.getUser(),
+    data: {},
   }
 
   handleLogout = () => {
@@ -19,6 +33,30 @@ class App extends Component {
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
   }
+
+
+
+
+
+
+
+
+
+
+  async componentDidMount() {
+
+    const fetchedData = await fetchData();
+
+    this.setState({ data: fetchedData });
+
+  }
+
+
+
+
+
+
+
 
   render () {
     return (
@@ -39,6 +77,21 @@ class App extends Component {
             handleSignupOrLogin={this.handleSignupOrLogin}
           />
         }/>
+
+
+
+
+
+
+
+        <div className="container">
+          <Cards data={this.state.data}/>
+          <CountryPicker />
+          <Chart />
+          
+          
+        </div>
+
       </>
     );
   }
