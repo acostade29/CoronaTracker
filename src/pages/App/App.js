@@ -20,6 +20,17 @@ import coronaImage from '../../../src/components/images/covidimage2.png';
 
 
 
+//comment imports 
+  
+// import * as commentAPI from '../../services/comments-api';
+// import CommentListPage from '../../pages/CommentListPage/CommentListPage';
+// import AddPuppyPage from '../../pages/AddCommentPage/AddCommentPage';
+
+
+
+// import UserListPage from '../UserListPage/UserListPage';
+
+
 
 class App extends Component {
   state = {
