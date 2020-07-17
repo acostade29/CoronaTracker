@@ -3,10 +3,23 @@ const bcrypt = require('bcrypt');
 
 const SALT_ROUNDS = 6;
 
+
+const commentSchema = new mongoose.Schema({
+  name: {
+      type: String,
+      required: true
+  }
+}, { timestamps: true }
+);
+
+
+
+
 const userSchema = new mongoose.Schema({
   name: String,
   email: {type: String, required: true, lowercase: true, unique: true},
   password: String,
+  comments: [commentSchema]
 }, {
   timestamps: true
 });
@@ -36,3 +49,4 @@ userSchema.methods.comparePassword = function(tryPassword, cb) {
 };
 
 module.exports = mongoose.model('User', userSchema);
+

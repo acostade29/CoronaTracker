@@ -9,6 +9,7 @@ router.post('/login', usersCtrl.login);
 /*---------- Protected Routes ----------*/
 router.use(require('../config/auth'));
 
+
 /*---------- Auth Checker ----------*/
 function checkAuth(req, res, next) {
     if (req.user) return next();
