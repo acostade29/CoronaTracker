@@ -22,13 +22,13 @@ import coronaImage from '../../../src/components/images/covidimage2.png';
 
 //comment imports 
   
-// import * as commentAPI from '../../services/comments-api';
-// import CommentListPage from '../../pages/CommentListPage/CommentListPage';
-// import AddPuppyPage from '../../pages/AddCommentPage/AddCommentPage';
+import * as commentAPI from '../../services/comments-api';
+import CommentListPage from '../../pages/CommentListPage/CommentListPage';
+import AddCommentpage from '../../pages/AddCommentPage/AddCommentPage';
 
 
 
-// import UserListPage from '../UserListPage/UserListPage';
+
 
 
 
@@ -36,6 +36,7 @@ class App extends Component {
   state = {
     user: userService.getUser(),
     data: {},
+    comments: [],
   }
 
   handleLogout = () => {
@@ -56,21 +57,27 @@ class App extends Component {
 
 
 
-  async componentDidMount() {
-    const fetchedData = await fetchData();
-    this.setState({ data: fetchedData });
-}
+
 
 handleCountryChange = async (country) => {
     const fetchedData = await fetchData(country);
     this.setState({ data: fetchedData, country: country });
-    
-    
 
+}
+handleAddComment = async newCommentData => {
+  const newComment = await commentAPI.create(newCommentData);
+  this.setState(state => ({
+    comments: [...state.comments, newComment]
+  }), () => this.props.history.push('/comments'));
 }
 
 
-
+async componentDidMount() {
+  const fetchedData = await fetchData();
+  this.setState({ data: fetchedData });
+  const comments = await commentAPI.getAll();
+  this.setState({comments});
+}
 
 
 
@@ -96,6 +103,36 @@ handleCountryChange = async (country) => {
             handleSignupOrLogin={this.handleSignupOrLogin}
           />
         }/>
+
+
+
+
+
+
+        <Route exact path='/comments' render={({history, location}) => 
+            <CommentListPage
+            comments={this.state.comments}
+            user={this.state.user}
+            history={history}
+            location={location}
+            />
+          } />
+                    {/* <Route exact path='/Add' render={() => 
+            <AddCommentPage
+              handleAddComment = {this.handleAddComment}
+            />
+          } />
+
+           */}
+
+   
+
+
+
+
+
+
+
 
 
 

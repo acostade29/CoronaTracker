@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './CommentListPage.css';
-import CommentCard from '../../components/CommentCard/CommentCard';
-import * as commentAPI from '../../services/comment-api'
+import CommentCard from '../../components/CommentsCard/CommentsCard';
+import * as commentAPI from '../../services/comments-api'
 
 
 class CommentListPage extends Component {
@@ -32,7 +32,7 @@ class CommentListPage extends Component {
                             idx={idx}
                             comment={comment}
                             user={this.props.user}
-                            handleDeleteCat={this.handleDeleteCat}
+                            handleDeleteComment={this.handleDeleteComment}
                         />
                     )}
                 </div>
