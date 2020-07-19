@@ -117,13 +117,13 @@ async componentDidMount() {
             location={location}
             />
           } />
-                    {/* <Route exact path='/Add' render={() => 
-            <AddCommentPage
+                    <Route exact path='/addcomment' render={() => 
+            <addcomment
               handleAddComment = {this.handleAddComment}
             />
           } />
 
-           */}
+          
 
    
 
