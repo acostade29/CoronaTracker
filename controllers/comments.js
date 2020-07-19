@@ -1,39 +1,32 @@
-const Comment =require('../models/comment');
+const User =require('../models/user');
 
 module.exports = {
-    index,
-    create,
-    show,
-    delete: deleteOne
-
+  index,
+  create,
+  delete: deleteOne,
+ 
 };
 
 
-
 async function index(req, res) {
-    const comments = await Comment.find({});
-    res.status(200).json(comments);
+    const user = await User.findById(req.user._id);
+    res.status(200).json(user.comments);
 }
-
-
 
 async function create(req, res) {
-    const comment = await Comment.create(req.body);
-    res.status(201).json(comment);
+    const user = await User.findById(req.user._id);
+    req.body.owner = req.user.name;
+    user.comments.push(req.body);
+    user.save(function(err) {
+        res.status(201).json(user.comments);
+    })
 }
-
-
-
-async function show(req, res) {
-    const comment = await Comment.findById(req.params.id);
-    res.status(200).json(comment);
-}
-
-
-
 
 async function deleteOne(req, res) {
-    const deletedComment = await Comment.findByIdAndRemove(req.params.id);
-    res.status(200).json(deletedComment);
+    const user = await User.findById(req.user._id);
+    let deletedComment = user.comments.splice(req.params.idx, 1);
+    user.save(function(err) {
+        res.status(200).json(deletedComment);
+    })
 }
 
