@@ -1,4 +1,5 @@
 const User =require('../models/user');
+const Comment = require('../models/comment')
 
 module.exports = {
   index,
@@ -14,12 +15,11 @@ async function index(req, res) {
 }
 
 async function create(req, res) {
-    const user = await User.findById(req.user._id);
-    req.body.owner = req.user.name;
-    user.comments.push(req.body);
-    user.save(function(err) {
-        res.status(201).json(user.comments);
-    })
+    console.log("We are here ")
+    req.body.user = req.user._id;
+    Comment.create(req.body)
+    .then(res => {res.json()})
+
 }
 
 async function deleteOne(req, res) {

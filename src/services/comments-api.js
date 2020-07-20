@@ -13,6 +13,7 @@ export function getAll() {
 }
 
 export function create(comment) {
+  console.log(comment)
   return fetch(BASE_URL, {
     method: 'POST',
     headers: {'content-type': 'application/json', 'Authorization': 'Bearer ' + tokenService.getToken()},
