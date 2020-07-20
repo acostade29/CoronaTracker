@@ -98,7 +98,12 @@ async componentDidMount() {
 
 
 
-
+<div className={styles.container}>
+            <img className={styles.image} src={coronaImage} alt="Covid-19"/>
+               <Cards data={data} />
+               <CountryPicker handleCountryChange={this.handleCountryChange} />
+               <Chart data={data}  country={country}/>
+            </div>
 
 
         <Route exact path='/comments' render={({history, location}) => 
@@ -132,12 +137,7 @@ async componentDidMount() {
 
 
 
-            <div className={styles.container}>
-            <img className={styles.image} src={coronaImage} alt="Covid-19"/>
-               <Cards data={data} />
-               <CountryPicker handleCountryChange={this.handleCountryChange} />
-               <Chart data={data}  country={country}/>
-            </div>
+          
 
       </>
     );

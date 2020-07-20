@@ -2,12 +2,14 @@ const express = require('express');
 const app = express();
 const logger = require('morgan');
 const port = process.env.PORT || 3001;
-const commentRouter =  require('./routes/comments')
+
 require('dotenv').config();
 require('./config/database');
 
-const userRouter = require('./routes/users');
+
 const cors = require('cors')
+const userRouter = require('./routes/users');
+const commentRouter =  require('./routes/comments')
 
 
 app.use(cors());

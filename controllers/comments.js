@@ -10,8 +10,8 @@ module.exports = {
 
 
 async function index(req, res) {
-    const user = await User.findById(req.user._id);
-    res.status(200).json(user.comments);
+    Comment.find({})
+    .then(comments => {res.json(comments)})
 }
 
 async function create(req, res) {
