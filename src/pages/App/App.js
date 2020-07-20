@@ -117,9 +117,9 @@ async componentDidMount() {
             location={location}
             />
           } />
-                    <Route exact path='/addcomment' render={() => 
-            <addcomment
-              handleAddComment = {this.handleAddComment}
+          <Route exact path='/AddcommentPage' render={() => 
+            <AddCommentpage
+              handleAddComment = {this.handleAddCommentPage}
             />
           } />
 

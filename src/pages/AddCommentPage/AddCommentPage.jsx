@@ -13,7 +13,7 @@ class AddCommentPage extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.handleAddCat(this.state.formData);
+    this.props.handleAddComment(this.state.formData);
   };
 
   handleChange = e => {
@@ -30,7 +30,7 @@ class AddCommentPage extends Component {
         <h1>Add Comment</h1>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>comment (required)</label>
+            <label>Add your comment  (required)</label>
             <input
               className="form-control"
               name="name"
