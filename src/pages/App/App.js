@@ -51,14 +51,6 @@ class App extends Component {
 
 
 
-
-
-
-
-
-
-
-
 handleCountryChange = async (country) => {
     const fetchedData = await fetchData(country);
     this.setState({ data: fetchedData, country: country });
@@ -119,7 +111,7 @@ async componentDidMount() {
           } />
           <Route exact path='/AddcommentPage' render={() => 
             <AddCommentpage
-              handleAddComment = {this.handleAddCommentPage}
+              handleAddComment = {this.handleAddComment}
             />
           } />
 
