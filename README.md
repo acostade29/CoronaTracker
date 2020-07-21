@@ -25,8 +25,7 @@
 
 # User Experience#1:
 ## User Persona :
-### The Pandemic has been brought to the world a bigest concerts and changes.
-### Brenda, a developer, has two brothers. One currently lives in Colombia and the other one in the US. Since they don't communicate that often, she wanted to build an application to help her track the status of the countries where their bother lives and be able to communicate sending public comments to her family members and friends. 
+### Brenda, a developer, has two brothers. One currently lives in Colombia and the other one in the US. Since they don't communicate that often, she wanted to build an application to help her track the status of the countries where their bother lives, as well be able to communicate by sending public comments to her family members and friends. 
 
 
 
@@ -51,22 +50,22 @@
 ### ***Getting Started***
 |Screenshot|
 |Main website|
-<img src="public/images/Screen Shot 2020-06-05 at 2.47.15 PM.png"></image>
+<img src="image/Screen Shot 2020-07-21 at 2.04.17 PM.png"></image>
 
 
-|Google Authorization|
-<img src="public/images/Screen Shot 2020-06-05 at 3.40.15 PM.png">
+| Authorization|
+<img src="image/Screen Shot 2020-07-21 at 2.20.17 PM.png">
 
 |Navegation bar|
-|Gizmo Dog Walking Services :User will have access to the link of the company side|
-<img src="public/images/Screen Shot 2020-06-05 at 3.15.33 PM.png">
+|CoronaTracker :User will have access to the link of the main site|
+<img src="image/Screen Shot 2020-07-21 at 2.05.48 PM.png">
 
 
-<ig src="public/images/Screen Shot 2020-06-05 at 3.14.58 PM.png">
+<img src="image/Screen Shot 2020-07-21 at 2.06.03 PM.png">
 
-|All Dogs: This option will provide a detail list of all dogs, and will have access to more information.|
+|add comment: This option will provide the user the option to add comments once is log into the application|
 
-<img src="public/images/Screen Shot 2020-06-05 at 3.18.17 PM.png">
+<img src="image/Screen Shot 2020-07-21 at 2.06.03 PM.png">
 
 
 <img src= "public/images/Screen Shot 2020-06-05 at 3.19.48 PM.png">
