@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import userService from '../../services/userService';
 
-function CommentCard({comment, handleDeleteComment, user, idx}) {
+function CommentCard({comment, handleDeleteComment, user }) {
     return (
         
         <div className='panel panel-default'>
@@ -22,7 +22,7 @@ function CommentCard({comment, handleDeleteComment, user, idx}) {
                 {comment.owner === user.name ?
                 <button
                     className='btn btn-xs btn-danger margin-left-10'
-                    onClick={() => handleDeleteComment(comment._id, idx)}
+                    onClick={() => handleDeleteComment(comment._id)}
                 >
                     DELETE
                 </button>

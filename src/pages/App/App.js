@@ -68,7 +68,7 @@ handleAddComment = async newCommentData => {
 handleDeleteComment= async id => {
   await commentAPI.deleteOne(id);
   this.setState(state => ({
-    comments: state.comments.filter(p => p._id !== id)
+    comments: state.comments.filter(c => c._id !== id)
   }), () => this.props.history.push('/comments'));
 }
 

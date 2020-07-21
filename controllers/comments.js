@@ -26,6 +26,7 @@ async function create(req, res) {
 }
 
 async function deleteOne(req, res) {
-    const deletedComment = await Comment.findByIdAndRemove(req.params.id);
-    res.status(200).json(deletedComment);
+   Comment.findByIdAndDelete(req.params.id)
+   .then(comment=> {res.json(comment)})
+
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CommentListPage/CommentListPage.css';
-import CommentCard from '../../components/CommentsCard/CommentsCard';
+import CommentCard from '../../components/CommentCard/CommentCard';
 
 function CommentListPage(props) {
   return (
@@ -10,9 +10,8 @@ function CommentListPage(props) {
         {props.comments.map(comment =>
             <CommentCard
                 key={comment._id}
-                puppy={comment}
-                user={props.user}
-                handleDeletePuppy={props.handleDeleteComment}
+                comment={comment}
+                handleDeleteComment={props.handleDeleteComment}
             />
         )}
       </div>
