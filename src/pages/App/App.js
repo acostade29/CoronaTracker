@@ -69,7 +69,7 @@ handleDeleteComment= async id => {
   await commentAPI.deleteOne(id);
   this.setState(state => ({
     comments: state.comments.filter(p => p._id !== id)
-  }), () => this.props.history.push('/'));
+  }), () => this.props.history.push('/comments'));
 }
 
 async componentDidMount() {
@@ -117,16 +117,18 @@ async componentDidMount() {
 
 
 
-        <Route exact path='/comments' render={({history, location}) => 
+        <Route exact path='/comments' render={({history}) => 
             <CommentListPage
             comments={this.state.comments}
+            
+            handleDeleteComment={this.handleDeleteComment}
             user={this.state.user}
             history={history}
-            location={location}
+            
             />
           } />
 
-
+            
 
           <Route exact path='/AddcommentPage' render={() => 
             <AddCommentpage

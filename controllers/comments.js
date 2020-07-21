@@ -26,10 +26,6 @@ async function create(req, res) {
 }
 
 async function deleteOne(req, res) {
-    const user = await User.findById(req.user._id);
-    let deletedComment = user.comments.splice(req.params.idx, 1);
-    user.save(function(err) {
-        res.status(200).json(deletedComment);
-    })
+    const deletedComment = await Comment.findByIdAndRemove(req.params.id);
+    res.status(200).json(deletedComment);
 }
-
