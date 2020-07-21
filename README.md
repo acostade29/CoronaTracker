@@ -5,19 +5,19 @@
 
  </p>
 
-<img src="public/images/Screen Shot 2020-06-02 at 9.02.27 AM.png">
+<img src="image/coronavirus-3992933.jpg">
 
 
 <p align="center">
-<img src="public/images/cachito.jpg">
+<img src="image/pills-on-blue-background-3936358.jpg">
 </p>
 
-### Date: 6/04/2020
+### Date: 7/22/2020
 #### By: Alfonso D Rojas Hernandez 
 #### | [GitHub](https://github.com/acostade29) | [LinkedIn](https://www.linkedin.com/in/alfonso-d-rojas-hernandez-2253a0105/)| 
 ***
 
-##### The project was deployed on GitHub Pages and can be viewed via Heroku [here](https://guizmo-project.herokuapp.com/).
+##### The project was deployed on GitHub Pages and can be viewed via Heroku [here](https://coronatrackeralfonso.herokuapp.com//).
 ***
 
 
@@ -25,28 +25,26 @@
 
 # User Experience#1:
 ## User Persona :
-### Nelson, as a small business owner of a dog walking company is trying to find an app for their employees to be able to track the amount of dogs they need to walk.
-
-# User Experience#2:
-## User Persona :
-### Mariela, one of Nelson's employees is new in the job and she is not sure where are the location and the dogs she needs to walk. this app will allow her track daily the amount of dogs she needs to wall and provide any feedback to review. 
+### The Pandemic has been brought to the world a bigest concerts and changes.
+### Brenda, a developer, has two brothers. One currently lives in Colombia and the other one in the US. Since they don't communicate that often, she wanted to build an application to help her track the status of the countries where their bother lives and be able to communicate sending public comments to her family members and friends. 
 
 
-## Motivation:  
-### One of my previous jobs in Boston was helping my friend Nelson start his own dog walking service. In this feild, a small APP like this comes in handy.
+
+
 
 
 ### ***Description***
-|Gizmo Dog Walking Services  |
+|Coronavirus Tracker |
 |---|
-| User(dog walker) will be able to interact with and app able to check a list of dogs to walk|
-| The user will be able to interact with the app and add, check, review and coment to all the dogs that has to be walk. 
-| The user will be able to have acces to the main website as well |
+| User will be able to interact with and app able to check a list of comments post by the community|
+| The user will be able to interact with the app. Add and delete comments will be available for the user. The user, only going to be able to delete their own comments. |
 | Features to use: |
-| Create dog, add detail information.|
-| Delete and check list. |
-| Edit information|
-| Add Comments|
+| check on the most current coronavirus database|
+|interact with the graphic and to be able to diplay the current status on each country|
+| Create and add comments|
+| Delete comment|
+
+
 
 ***
 
