@@ -103,7 +103,6 @@ the user will have access to current worldwide data ( infected, recovered and de
 
 - For brand logo:
 - canva.com
-- css 
 - materialize
 - Material UI 
 - API Data :  https://covid19.mathdro.id/api
@@ -126,18 +125,18 @@ the user will have access to current worldwide data ( infected, recovered and de
 
 
 ## Future Updates 
-- Develop and add an API for miles tracker and map.
--  Create a better display for the board. animation background. 
--  Create a message interface between users.  
+- improve the design of the app.
+- Add a second API with news.  
+
 
 
 
 ## Thank you 
-- Thank you to all my classmates and instructors of this course. Everybody help me to achieve and make this app to work and function properly.
+- Thank you to all my classmates and my instructor Ben Manley. Everybody help me to achieve and make this app to work and function properly.
 Thank you!
 
 
 <p align="center">
 
-<img src="public/images/Dog.jpeg">
+<img src="image/Thank you.jpeg">
  </p>
