@@ -50,7 +50,7 @@
 ### ***Getting Started***
 |Screenshot|
 |Main website|
-<img src="image/Screen Shot 2020-07-21 at 2.04.17 PM.png"></image>
+<img src="image/Screen Shot 2020-07-21 at 2.04.17 PM.png">
 
 
 | Authorization|
@@ -68,12 +68,21 @@
 <img src="image/Screen Shot 2020-07-21 at 2.06.03 PM.png">
 
 
-<img src= "public/images/Screen Shot 2020-06-05 at 3.19.48 PM.png">
+<img src= "image/Screen Shot 2020-07-21 at 2.08.44 PM.png">
 
-|My Dogs : this option will provide the user the option to create a dog info card and delete any card already once done.|
-|Log Out: User will be able to log out their page and the information will be storage and save via Mongo DB|
 
-<img src="public/images/Screen Shot 2020-06-05 at 3.21.54 PM.png">
+|delete comments: This option will provide the user the option to delete comments once is log into the application|
+
+<img src= "image/Screen Shot 2020-07-21 at 2.08.32 PM.png">
+
+
+|API Structure: user will be able to interact with the coronavirus data. 
+the user will have access to current worldwide data ( infected, recovered and deaths)  as well shearch information to specific countries|
+
+<img src= "image/Screen Shot 2020-07-21 at 2.06.03 PM.png">
+<img src= "image/Screen Shot 2020-07-21 at 2.08.12 PM.png">
+
+
 
 
 
@@ -83,17 +92,20 @@
    
 
 ### ***Technologies Used***
-<img src="public/images/github jedi.jpeg">
-<img src="public/images/favicon.ico">
+<img src="image/labtocat.png">
+<img src="image/favicon.ico">
+<img src="image/og-learning-path-react.jpg">
 <img src="public/images/herokulogo.png">
-<img src="public/images/cssjavahtml.jpeg">
-<img src="public/images/nodeexpress.jpeg">
+<img src="image/heroku-node-1.png">
+<img src="image/mongoose.jpeg">
+<img src="imagelarge__original_4-JavaScript-Projects-to-Advance-Your-CSS3-Animations.jpg">
 
 - For brand logo:
 - canva.com
-- css materialize:
-- company Website: wix.com
-- 
+- css 
+- materialize
+- Material UI 
+- API Data :  https://covid19.mathdro.id/api
 
 
 
