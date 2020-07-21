@@ -133,7 +133,7 @@ the user will have access to current worldwide data ( infected, recovered and de
 
 ## Thank you 
 - Thank you to all my classmates and my instructor Ben Manley. Everybody help me to achieve and make this app to work and function properly.
-Thank you!
+
 
 
 <p align="center">
