@@ -9,6 +9,9 @@ module.exports = {
 };
 
 
+
+
+
 async function index(req, res) {
     Comment.find({})
     .then(comments => {res.json(comments)})

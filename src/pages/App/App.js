@@ -56,13 +56,21 @@ handleCountryChange = async (country) => {
     this.setState({ data: fetchedData, country: country });
 
 }
+
+
 handleAddComment = async newCommentData => {
   const newComment = await commentAPI.create(newCommentData);
   this.setState(state => ({
     comments: [...state.comments, newComment]
-  }), () => this.props.history.push('/comments'));
+  }), () => this.props.history.push('/'));
 }
 
+handleDeleteComment= async id => {
+  await commentAPI.deleteOne(id);
+  this.setState(state => ({
+    comments: state.comments.filter(p => p._id !== id)
+  }), () => this.props.history.push('/'));
+}
 
 async componentDidMount() {
   const fetchedData = await fetchData();
@@ -98,12 +106,15 @@ async componentDidMount() {
 
 
 
-<div className={styles.container}>
+      <div className={styles.container}>
             <img className={styles.image} src={coronaImage} alt="Covid-19"/>
                <Cards data={data} />
                <CountryPicker handleCountryChange={this.handleCountryChange} />
                <Chart data={data}  country={country}/>
             </div>
+
+
+
 
 
         <Route exact path='/comments' render={({history, location}) => 
@@ -114,11 +125,17 @@ async componentDidMount() {
             location={location}
             />
           } />
+
+
+
           <Route exact path='/AddcommentPage' render={() => 
             <AddCommentpage
               handleAddComment = {this.handleAddComment}
             />
           } />
+
+
+          
 
           
 
