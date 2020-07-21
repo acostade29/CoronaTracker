@@ -97,8 +97,9 @@ the user will have access to current worldwide data ( infected, recovered and de
 <img src="image/og-learning-path-react.jpg">
 <img src="public/images/herokulogo.png">
 <img src="image/heroku-node-1.png">
+<img src="image/Express.jpeg">
 <img src="image/mongoose.jpeg">
-<img src="imagelarge__original_4-JavaScript-Projects-to-Advance-Your-CSS3-Animations.jpg">
+<img src="image/large__original_4-JavaScript-Projects-to-Advance-Your-CSS3-Animations.jpg">
 
 - For brand logo:
 - canva.com
@@ -111,7 +112,7 @@ the user will have access to current worldwide data ( infected, recovered and de
 
 
 
-# Trelloboard and structure of the website [here](https://trello.com/b/Ly4uhb83/dog-walking).
+# Trelloboard and structure of the website [here](https://trello.com/b/7aZAMKpY/covid-19tracker).
 
 
 
