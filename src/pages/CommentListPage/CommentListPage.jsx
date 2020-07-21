@@ -12,6 +12,8 @@ function CommentListPage(props) {
                 key={comment._id}
                 comment={comment}
                 handleDeleteComment={props.handleDeleteComment}
+                user={props.user}
+
             />
         )}
       </div>

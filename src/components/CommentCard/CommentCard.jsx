@@ -19,7 +19,7 @@ function CommentCard({comment, handleDeleteComment, user }) {
             </div>
             <div className='panel-footer'>
                 
-                {comment.owner === user.name ?
+                {comment.user === user._id ?
                 <button
                     className='btn btn-xs btn-danger margin-left-10'
                     onClick={() => handleDeleteComment(comment._id)}
